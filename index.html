@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="script.js"></script>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <main class="max-w-screen-md mx-auto w-11/12">
+      <form class="grid grid-cols-2 md:grid-cols-4 gap-3 py-5">
+        <input  class="bg-slate-100 p-2" type="text" name="name" placeholder="Book Name" />
+        <input class="bg-slate-100 p-2" type="text" name="pages" placeholder="Number of pages" />
+        <select name="read" class="rd p-2  border rounded-md">
+          <option value="readIt" selected>I Have Read It</option>
+          <option value="unfinished">Not Read Yet</option>
+        </select class="w-full">
+        <button class="bg-slate-900 text-white py-2">Add Book</button>
+        <p class="alert text-red-500 font-semibold hidden">
+          All fields must be filled.
+        </p>
+      </form>
+      <div class="main grid md:grid-cols-2 gap-5 md:gap-x-2"></div>
+    </main>
+  </body>
+</html>
